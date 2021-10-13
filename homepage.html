@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <meta name="viewport" content = "width=device-width, initial-scale=1.0"> <!-- helps in making website responsive-->
+        <title>Expense Tracker</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,700;1,100&display=swap" rel="stylesheet"> <!-- google fonts-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!--google icons-->
+    </head>
+    <body>
+        <!--Header-->
+        <section class="header">
+            <nav>
+                <a href="homepage.html"><img src="images\logo.png" height=130 width=100></a>
+                <div class="nav-links" id="navLinks">
+                    <span class="material-icons" onclick="hideMenu()">close</span> <!--close button mobile mode-->
+                    <ul>
+                        <li><b><a href="homepage.html">HOME</a></b></li>
+                        <li><a href="add.html">ADD TRANSACTIONS</a></li>
+                        <li><a href="view.html">VIEW TRANSACTIONS</a></li>
+                        <li><a href="expense.html">EXPENSE REPORTS</a></li>
+                        <li><a href="goals.html">GOALS</a></li>
+                        <li><a href="profile.html">PROFILE</a></li>
+                        <li><a href="help.html">HELP</a></li>
+                    </ul>
+                </div>
+                <span class="material-icons" onclick="showMenu()">view list</span> <!--menu button mobile mode-->
+            </nav>
+            <div class="text-box">
+                <h1>Welcome to Expense Tracker!</h1>
+                <p>Managing your expenses the right way. Get started by adding your transactions and budget, <br>keeping track of your savings and much more!
+                </p>
+            </div>
+        </section>
+        <!--Footer-->
+        <section class="contact">
+            <h2>Having Trouble with the Website?</h2>
+            <a href="" class="hero-btn">CONTACT US</a>
+            <div class="icons">
+                <span class="material-icons">email</span>
+                <span class="material-icons">call</span>
+            </div>
+            <p>Made with <span class="material-icons favorite">favorite</span> by team SAVage</p>
+        </section>
+        <!--Javascript for toggling menu in mobile mode-->
+        <script>
+            var navLinks= document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = '0px'; 
+            }
+            function hideMenu(){
+                navLinks.style.right = '-200px';  
+            } 
+        </script>
+    </body>
+</html>

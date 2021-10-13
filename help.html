@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <meta name="viewport" content = "width=device-width, initial-scale=1.0"> <!-- helps in making website responsive-->
+        <title>Help</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,700;1,100&display=swap" rel="stylesheet"> <!-- google fonts-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!--google icons-->
+    </head>
+    <body>
+        <!--Header-->
+        <section class="header">
+            <nav>
+                <a href="homepage.html"><img src="images\logo.png" height=130 width=100></a>
+                <div class="nav-links" id="navLinks">
+                    <span class="material-icons" onclick="hideMenu()">close</span> <!--close button mobile mode-->
+                    <ul>
+                        <li><a href="homepage.html">HOME</a></li>
+                        <li><a href="add.html">ADD TRANSACTIONS</a></li>
+                        <li><a href="view.html">VIEW TRANSACTIONS</a></li>
+                        <li><a href="expense.html">EXPENSE REPORTS</a></li>
+                        <li><a href="goals.html">GOALS</a></li>
+                        <li><a href="profile.html">PROFILE</a></li>
+                        <li><b><a href="help.html">HELP</a></b></li>
+                    </ul>
+                </div>
+                <span class="material-icons" onclick="showMenu()">view list</span> <!--menu button mobile mode-->
+            </nav>
+            <div class="title">
+                <h1>Help</h1>
+            </div>
+        </section>
+        <!--Javascript for toggling menu in mobile mode-->
+        <script>
+            var navLinks= document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = '0px'; 
+            }
+            function hideMenu(){
+                navLinks.style.right = '-200px';  
+            } 
+        </script>
+    </body>
+</html>
