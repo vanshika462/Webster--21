@@ -18,7 +18,7 @@ nav{
 .nav-links{
     flex:1;
     text-align:right;
-} 
+} /*menu position*/
 .nav-links ul li{
     list-style: none;
     display: inline-block;
