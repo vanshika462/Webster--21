@@ -60,7 +60,7 @@ nav{
 .title{
     width: 90%;
     position: absolute;
-    top: 40%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%,-50%);
     text-align: left;
@@ -117,6 +117,48 @@ nav .material-icons{
 .favorite{
     color: rgb(209, 119, 119);
 }
+.form{
+    width: 90%;
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: left;
+    color:black;
+} /*form settings*/
+.form p{
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    margin-bottom: 18px;
+    font-weight: 400;
+}
+input[type="text"]{
+    display:block;
+    padding: 10px 10px 10px 40px;
+    border-radius: 5px;
+    border-color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+}/*input is text in form*/
+select{
+    display:block;
+    padding: 10px 10px 10px 40px;
+    border-radius: 5px;
+    border-color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+}/*dropdown format*/
+textarea{
+    display:block;
+    width: 180px;
+    padding: 10px 10px 10px 40px;
+    max-width: 100%;
+    max-height: 150px;
+    border-radius: 5px;
+    border-color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+}/*textarea format*/
 /*----------------------MOBILE MODE----------------------*/
 @media(max-width: 700px)
 {
@@ -153,4 +195,23 @@ nav .material-icons{
         cursor: pointer;
         padding: 5%;
     }
+    .form{
+        top: 65%;
+    } 
+    .form p{
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+    input[type="text"]{
+        font-size: 14px;
+    }
+    select{
+        font-size: 14px;
+    }
+    textarea{
+        width: 180px;
+        max-height: 80px;
+        max-width: 80%;
+        font-size: 14px;
+    }/*textarea format*/
 }

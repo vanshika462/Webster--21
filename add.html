@@ -31,6 +31,33 @@
             <div class="title">
                 <h1>Add Transactions</h1>
             </div>
+            <div class="form">
+                <form>
+                    <!--Amount-->
+                    <p>Enter amount</p>
+                    <input type="text" placeholder="Eg: 100" min="0" required>
+                    <br>
+                    <br>
+                    <!--Category-->
+                    <p>Choose category</p>
+                    <select id="category" required>
+                        <option value="food">Food</option>
+                        <option value="shopping">Shopping</option>
+                        <option value="stationery">Stationery</option>
+                        <option value="rent">Rent</option>
+                        <option value="misc">Miscellaneous</option>
+                    </select>
+                    <br>
+                    <br>
+                    <!--Comment-->
+                    <p>Enter comment</p>
+                    <textarea placeholder="Comment"></textarea>
+                </form> 
+                <br>
+                <br>
+                <!--Save New Transaction-->
+                <a href="" class="hero-btn">Add Transaction</a>
+                </div>
         </section>
         <!--Javascript for toggling menu in mobile mode-->
         <script>
