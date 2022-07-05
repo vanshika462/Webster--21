@@ -2,7 +2,7 @@
 <html> 
     <head>
         <meta name="viewport" content = "width=device-width, initial-scale=1.0"> <!-- helps in making website responsive-->
-        <title>Add Transactions</title>
+        <title>Register Yourself</title>
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,17 +29,18 @@
                 <span class="material-icons" onclick="showMenu()">view list</span> <!--menu button mobile mode-->
             </nav>
             <div class="title">
-                <h1>Add Transactions</h1>
+                <h1>Register Yourself</h1>
             </div>
             <div class="form">
-                <form method="post" action="add.php">
+                <form method="POST" action="add.php">
                     <!--Amount-->
                     <p>Enter amount</p>
-                    <input id="" name="amount" type="text" placeholder="Eg: 100" min="0" required>
+                    <input name="amount" type="text" placeholder="Eg: 100" min="0" required>
+                    <br>
                     <br>
                     <!--Category-->
                     <p>Choose category</p>
-                    <select id="" name="category" required>
+                    <select id="category" name="category" required>
                         <option value="food">Food</option>
                         <option value="shopping">Shopping</option>
                         <option value="stationery">Stationery</option>
@@ -47,14 +48,16 @@
                         <option value="misc">Miscellaneous</option>
                     </select>
                     <br>
+                    <br>
                     <!--Comment-->
                     <p>Enter comment</p>
                     <textarea name="comment" placeholder="Comment"></textarea>
-                    <br>
-                    <!--Save New Transaction-->
-                    <input type="submit" name="add" id="" class="hero-btn" value="Add Transaction">
                 </form> 
-            </div>
+                <br>
+                <br>
+                <!--Save New Transaction-->
+                <a name="add" href="" class="hero-btn">Add Transaction</a>
+                </div>
         </section>
         <!--Javascript for toggling menu in mobile mode-->
         <script>
