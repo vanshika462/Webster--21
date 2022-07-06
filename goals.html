@@ -31,6 +31,34 @@
             <div class="title">
                 <h1>My Goals</h1>
             </div>
+            <div class="form">
+            <div class="row">
+                <form method="post" action="goals.php">
+                    <!--Budget-->
+                    <div class="column">
+                        <p>Enter budget</p>
+                    <input id="" name="budget" type="text" placeholder="Eg: 100" min="0" required>
+                    <br>
+                    <!--Save New Goal-->
+                    <input type="submit" name="goal" id="" class="hero-btn" value="Save Your Goal">
+                    </div>
+                    <!--Timeline-->
+                    <div class="column">
+                        <p>Choose timeline</p>
+                    <select id="" name="timeline" required>
+                        <option value="weekly">Weekly</option>
+                        <option value="monthly">Monthly</option>
+                        <option value="yearly">Yearly</option>
+                    </select>
+                    </div>
+                </form> 
+            </div> 
+            </div>
+        </section>
+        <section class="subtitleheader">
+            <div class="subtitle">
+                <h1>Expenses Vs Goals</h1>
+            </div>
         </section>
         <!--Javascript for toggling menu in mobile mode-->
         <script>

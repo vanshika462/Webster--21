@@ -71,6 +71,23 @@ nav{
 nav .material-icons{
     display: none;
 }
+.subtitleheader{
+    min-height: 100vh;
+    width: 100%;
+    background-color:rgb(#fff);
+    position: relative;
+} /*subtitle background*/
+.subtitle{
+    width: 90%;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: left;
+}/*subtitle for other pages*/
+.subtitle h1{
+    font-size: 35px;
+}
 .contact{
     margin: 100px auto;
     width: 90%;
@@ -160,6 +177,15 @@ textarea{
     font-weight: 400;
     font-size: 16px;
 }/*textarea format*/
+.column {
+    float: left;
+    width: 50%;
+}/*goals*/
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}/* Clear floats after the columns */
 /*----------------------MOBILE MODE----------------------*/
 @media(max-width: 700px)
 {
@@ -205,6 +231,7 @@ textarea{
     }
     input[type="text"]{
         font-size: 14px;
+        width:100px;
     }
     select{
         font-size: 14px;
