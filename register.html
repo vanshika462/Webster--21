@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <meta name="viewport" content = "width=device-width, initial-scale=1.0"> <!-- helps in making website responsive-->
+        <title>Expense Tracker</title>
+        <link rel="stylesheet" href="loginregister.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,700;1,100&display=swap" rel="stylesheet"> <!-- google fonts-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!--google icons-->
+    </head>
+    <body>
+        <div class="center">
+            <h1>Register</h1>
+            <form action="register.php" method="post">
+                <div class="txt_field">
+                    <input type="text" required name="name">
+                    <span></span>
+                    <label>Full Name</label>
+                </div>
+                <div class="txt_field">
+                    <input type="email" required name="email">
+                    <span></span>
+                    <label>Email</label>
+                </div>
+                <div class="txt_field">
+                    <input type="tel" required name="mobile">
+                    <span></span>
+                    <label>Mobile Number</label>
+                </div>
+                <div class="txt_field">
+                    <input type="password" required placeholder="********" name="password">
+                    <span></span>
+                    <label>Password</label>
+                </div>
+                <div class="pass">Forgot Password?</div>
+                <input type="submit" class="hero-btn" value="Register">
+                <div class="signup_link">Have an account? <a href='login.html'>Login</a></div>
+            </form>
+        </div>
+    </body>
+</html>
